@@ -1,0 +1,115 @@
+.cart-item{
+    display: flex;
+    padding: 2rem;
+    margin: 2rem 2rem ;
+    border: 1px solid #555;
+    border-radius: 1rem;
+    /* background-color: #c97e7a; */
+}
+.cart-item-img-container{
+    width: 20%;
+    /* background-color: #EFC64D; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cart-item-img{
+    min-width: 8rem;
+    min-height: 8rem;
+    height:max-content;
+    object-fit: cover;
+    box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+    -moz-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+}
+.cart-item-content-container{
+    width: 100%;
+    padding-left: 3rem;
+    padding-top: 1px;
+    /* background-color: #555; */
+}
+.cart-item-content-container h2{
+    
+}
+.cart-item-content-container p{
+    padding-top: 1px;
+}
+.cart-item-price{
+    padding-top: 20px;
+    color: #EFC64D;
+}
+.delete_button{
+    background-color: #2D0B09;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor:pointer;
+    transition: 0.3s ease;
+    border: none;
+}
+.delete_button:hover{
+    background-color:white;
+    color: #EFC64D;
+    font-weight: bold;
+    border: 1px solid #2D0B09;
+    box-shadow: 1px 1px 2px #2d0b09;
+}
+.cart-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #db150a; */
+}
+
+@media screen and (max-width: 764px) {
+
+    .cart-item-img{
+        min-width: 4rem;
+        min-height: 4rem;
+        height:max-content;
+        object-fit: cover;
+        box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+        -webkit-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+        -moz-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+    }
+    .cart-item-content-container{
+        margin: -20px;
+        /* background-color: #555; */
+    }
+    .cart-item-content-container h2,h3{
+        font-size: medium;
+        background-color: ;
+    }
+    .cart-item-content-container p,h3{
+        padding-top: 1px;
+        font-size: smaller;
+    }
+    .delete_button{
+        background-color: #2D0B09;
+        color: #fff;
+        padding: 8px;
+        border-radius: 5px;
+        margin-top: 1rem;
+        cursor:pointer;
+        transition: 0.3s ease;
+        border: none;
+        font-size: x-small;
+    }
+    .cart-btn-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: #db150a; */
+    }
+    .cart-date-part{
+        text-align: end;
+        margin-top: -5px;
+    }
+    .cart-date-part p{
+        font-size: x-small;
+    }
+}

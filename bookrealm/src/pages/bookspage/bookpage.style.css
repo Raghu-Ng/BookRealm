@@ -1,0 +1,26 @@
+.search-container{
+    width:50%;
+    margin:auto;
+    padding:5%;
+}
+.search-container h2{
+    text-align: center;
+    padding: 10px;
+}  
+.bookpage{
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+/* background-image: radial-gradient(49% 81% at 45% 47%, #efc64d 0%, #efc64d 3%, #073AFF00 200%),radial-gradient(113% 91% at 17% -2%, #2d0b09 100%, #efc64d 200%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 2%, #FF000000 100%),radial-gradient(142% 91% at -6% 74%, black 98%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #FF0000FF 0%, #EFC64DFF 1%); */
+}
+
+@media only screen and (max-width: 768px) {
+    .search-container{
+        width:90%;
+        margin:auto;
+        padding:5%;
+    }
+h2{
+    font-size: 24px;
+    margin: 0px -20px;
+}
+}

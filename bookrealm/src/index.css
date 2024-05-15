@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;600;700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+  
+  /* background-color: aquamarine; */
+}
+
+:root {
+  --primary-color: #efc64d;
+  --primary-color-bright: #2d0b09;
+  --white-color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Chivo Mono;
+}
+h2{
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary{
+  color:var(--primary-color-bright)
+}
+span {
+  font-family: Chivo Mono;
+}
+.button-primary {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: 0.2s ease-in;
+  border: none;
+  font-family: Chivo Mono;
+  font-size: 1rem;
+  border-radius: 2rem;
+  width: max-content;
+}
+.button-primary:hover {
+  /* background-color: #2D0B09; */
+  box-shadow: 1px 1px 2px #2d0b09;
+  background-color: #fff;
+  color: var(--primary-color);
+  border: none;
+}

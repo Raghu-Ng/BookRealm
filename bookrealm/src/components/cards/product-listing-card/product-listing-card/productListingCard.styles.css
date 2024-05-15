@@ -1,0 +1,182 @@
+.product-listing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.1px solid #ccc;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    box-shadow: 4px 4px 7px #ddd;
+    margin: 20px;
+    background-color: #fff;
+    width: 100%;
+    
+    /* justify-content: space-between; */
+}
+.product-listing-card:hover{
+    border: 0px;
+    background-color: #fff;
+    box-shadow: 4px 4px 7px #2d0b09;
+    transition: 0.2s ease-in;
+    border: none;
+}
+
+.product-listing-img-container {
+    border-radius: 10px;
+    width: 200px;
+    height: max-content;
+    margin: 10px 20px;
+    padding: 10px;
+    min-height:17rem;
+    min-width: 13rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.product-listing-img-container img {
+    height: 250px;
+    width: auto;
+    min-height:17rem;
+    min-width: 12rem;
+    object-fit: cover;
+    box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+-webkit-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+-moz-box-shadow: -8px 7px 5px 1px rgba(0,0,0,0.44);
+}
+
+
+.product-listing-details-container  {
+    display: inline-block;
+    padding: 8px 20px;
+    color: #fff;
+    background-size: 100% 100%;
+background-position: 0px 0px;
+background-image: linear-gradient(180deg, #71C4FFFF 0%, #2D0B09FF 0%, #efc64d 99%);
+    /* background: rgb(239,198,77); */
+    /* background: linear-gradient(23deg, rgba(239,198,77,0.6699054621848739) 0%, rgba(45,11,9,1) 100%); */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    min-width: 230px;
+    max-width: 5rem;
+    max-height: 10rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-listing-details-conatiner:hover {
+    background-color: var(--primary-color);
+ 
+}
+
+.product-listing-details-container h4 {
+    font-size: 1rem;
+}
+
+.product-listing-details-container p {
+    margin: 0px 0px;
+    font-family: Chivo Mono;
+}
+.pricing {
+    font-size: large;
+    display: flex;
+    justify-content: end;
+    font-weight: bold;
+    color: var(--primary-color-bright);
+}
+
+.listings-wrapper {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll if contents exceed parent width */
+    padding: 20px; /* Optional: Add padding as needed */
+}
+
+.card-btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    margin: 2px;
+    gap: 0.5rem;
+}
+
+.btn-addcart{
+    display: inline;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 0.1px solid;
+}
+.btn-addcart:hover{
+    background-color: #fff;
+    box-shadow: 4px 4px 7px #ddd;
+    transition: 0.2s ease-in;
+    border: none;
+}
+
+.dropdown-menu {
+    background-color: var(--primary-color);
+    display: none; /* Initially hide the dropdown */
+    flex-direction: column;
+    position: absolute;
+    margin-top: 50px;
+    padding: 5px;
+    gap: 5px;
+    font-size: large;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.card-btn-container:hover .dropdown-menu {
+    display: flex; /* Display the dropdown when the parent container is hovered */
+}
+.rent, .buy{
+    display: flex;
+    justify-content: space-between;
+}
+.optioncounter{
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    border:1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+    
+} 
+.optioncounterbuttonn{
+    background-color:rgb(238, 230, 230);
+    color: var(--primary-color) ;
+    cursor: pointer;
+    width: 25px;
+}
+.optioncounterbuttonn:disabled{
+    cursor: not-allowed;
+}  
+
+
+@media screen and (max-width: 768px) {
+    .product-listing-details-container{
+        font-size:medium;
+    }
+    .product-listing-details-container h3{
+        font-size: large;
+    }
+    .btn-addcart:hover{
+        background-color: #fff;
+        box-shadow: 4px 4px 7px #ddd;
+        transition: 0.2s ease-in;
+        border: none;
+    }
+    .product-listing-card {
+        margin-bottom:-20px;
+
+    }
+}
